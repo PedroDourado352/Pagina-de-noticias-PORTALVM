@@ -9,4 +9,7 @@ def tarefas_home(request):
     return render(request, 'tarefas/home.html', contexto)     
 
 def tarefas_adicionar(request):
-    return HttpResponse("Adicione aqui suas tarefas.")  
+    return HttpResponse("Adicione aqui suas tarefas.") 
+
+def noticias(request):
+    return render(request,'tarefas/noticias.html')
