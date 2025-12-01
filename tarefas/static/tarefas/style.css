@@ -12,16 +12,6 @@ body {
     background-color: #f7f7f7;
 }
 
-/* Moldura geral da página */
-.page {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 6px;
-}
-
 /* Cabeçalho */
 .header {
     display: flex;
@@ -31,11 +21,16 @@ body {
 }
 
 .logo {
-    font-size: 26px;
-    font-weight: 600;
+    margin: 20px 0;
+    margin-left: 10px;
+    height: 50px;
+    font-size: 26px; color: #ff0000;
+    font-weight: 500;
+
 }
 
 .search-container {
+    margin: auto 20px;
     flex: 0 0 350px;
 }
 
@@ -58,6 +53,7 @@ body {
 }
 
 .sidebar ul {
+    margin-left: 12px;
     list-style: none;
 }
 
@@ -73,6 +69,8 @@ body {
 
 /* Destaque da obra */
 .highlight {
+    margin: auto 0;
+    margin-right: 20px;
     border: 1px solid #000;
     padding: 16px 18px;
     border-radius: 4px;
@@ -90,11 +88,12 @@ body {
 
 /* Tags */
 .tags {
-    display: flex;
+    display: flex; 
     align-items: center;
     flex-wrap: wrap;
     gap: 10px 20px;
     margin-bottom: 30px;
+    margin-top: 20px;
     font-size: 14px;
 }
 
@@ -113,11 +112,13 @@ body {
 
 /* Notícias recentes */
 .news h2 {
+    margin-top: 50px;
     font-size: 20px;
     margin-bottom: 16px;
 }
 
 .news-grid {
+    margin-right: 20px;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
