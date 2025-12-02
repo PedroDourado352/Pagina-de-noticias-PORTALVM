@@ -6,25 +6,40 @@ body {
     padding-top: 40px;
 }
 
-.noticia-container {
-    text-align: center;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    margin-bottom: 30px;
 }
 
-.titulo-noticia {
-    font-size: 22px;
-    margin-bottom: 20px;
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff4b5c;
 }
 
-.caixa-noticia {
-    width: 350px;
-    height: 350px;
-    background: white;
-    border: 3px solid #000;
+.search-container {
+    flex: 1;
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
     border-radius: 25px;
-    margin: 0 auto;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
 }
 
-.paragrafo-noticia {
-    margin-top: 30px;
-    font-size: 18px;
+.search-input:focus {
+    border-color: #ff4b5c;
+    box-shadow: 0 0 5px rgba(255,75,92,0.4);
 }
+
