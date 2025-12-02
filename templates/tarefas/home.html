@@ -64,26 +64,29 @@
                     <h2>Notícias recentes</h2>
 
                     <div class="news-grid">
-                        <article class="news-card">
-                            <h3>Empreendimentos entregues da viana e moura em 2025</h3>
-                            <p>Resumo curto da notícia...</p>
-                        </article>
 
-                        <article class="news-card">
+                        <a href="{% url 'tarefas:noticia_detalhe' %}">
+                            <article class="card">
+                                <h3>Empreendimentos entregues da viana e moura em 2025</h3>
+                                <p>Resumo curto da notícia...</p>
+                            </article>
+                        </a>
+
+                        <article class="card">
                             <h3>Novo procedimento de segurança em obra</h3>
                             <p>Resumo curto da notícia...</p>
                         </article>
-                    </div>
-                    <div class="news-grid">
-                        <article class="news-card">
+
+                        <article class="card">
                             <h3>Atualização de dashboards</h3>
                             <p>Resumo curto da notícia...</p>
                         </article>
 
-                        <article class="news-card">
+                        <article class="card">
                             <h3>Lançamento Portal de notícias VM</h3>
                             <p>Resumo curto da notícia...</p>
                         </article>
+
                     </div>
                 </section>
             </main>

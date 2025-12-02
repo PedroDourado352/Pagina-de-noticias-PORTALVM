@@ -13,3 +13,6 @@ def tarefas_adicionar(request):
 
 def noticias(request):
     return render(request,'tarefas/noticias.html')
+    
+def noticia_detalhe(request):
+    return render(request, 'tarefas/noticia_detalhe.html')

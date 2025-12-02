@@ -86,6 +86,7 @@ body {
 
 /* Destaque da obra */
 .highlight {
+    margin-right: 10px;
     border-radius: 10px;
     background-color: #ffffff;
     padding: 20px;
@@ -138,14 +139,52 @@ body {
     margin-bottom: 20px;
 }
 
-.news-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+.card1 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 170px; /* garante altura igual */
+}
+
+.card2 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 170px; /* garante altura igual */
+}
+
+.card3 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 170px; /* garante altura igual */
+}
+
+.card4 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 170px; /* garante altura igual */
 }
 
 .news-card {
-    margin-top: 30px;
+    margin-top: 20px;
     flex: 0 1 calc(50% - 30px);
     background-color: #ffffff;
     border-radius: 10px;
@@ -192,4 +231,42 @@ body {
     .search-container {
         width: 100%;
     }
+}
+
+/* GRID dos cards exatamente como a imagem */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 25px; /* espaço entre os cards */
+    margin-top: 20px;
+}
+
+/* Card unificado */
+.card {
+    margin-right: 10px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 25px; /* cantos mais arredondados como no desenho */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    height: 120px; /* altura igual para todos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform .2s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
 }
