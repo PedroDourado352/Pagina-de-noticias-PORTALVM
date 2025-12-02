@@ -1,11 +1,26 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'tarefas/noticia_detalhe.css' %}" />
+    <title>Notícia</title>
 </head>
 <body>
-    <h1>Bem vindo a noticia</h1>
+    <div class="noticia-container">
+    <h2 class="titulo-noticia">Título da notícia/Atualização</h2>
+
+    <div class="caixa-noticia">
+        <!-- Caso queira uma imagem dentro da caixa, coloque aqui -->
+        <!-- <img src="sua-imagem.jpg" alt="imagem da notícia"> -->
+    </div>
+
+    <p class="paragrafo-noticia">
+        Parágrafo da notícia
+    </p>
+</div>
+
 </body>
 </html>

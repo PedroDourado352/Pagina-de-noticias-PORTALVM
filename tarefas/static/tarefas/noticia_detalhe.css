@@ -1,0 +1,30 @@
+body {
+    font-family: "Comic Sans MS", "Marker Felt", cursive; /* Para aproximar da fonte desenhada */
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.noticia-container {
+    text-align: center;
+}
+
+.titulo-noticia {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.caixa-noticia {
+    width: 350px;
+    height: 350px;
+    background: white;
+    border: 3px solid #000;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.paragrafo-noticia {
+    margin-top: 30px;
+    font-size: 18px;
+}
