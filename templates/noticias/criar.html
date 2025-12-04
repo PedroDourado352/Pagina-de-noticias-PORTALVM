@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 {% load static %}
 <html lang="pt-br">
 <head>
@@ -24,6 +25,25 @@
         </div>
     </div>
 
+=======
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Criar notícia</title>
+</head>
+<body>
+    <h1>Criar notícia</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Salvar</button>
+    </form>
+
+    <p>
+        <a href="{% url 'tarefas:listar_noticias' %}">Voltar para lista</a>
+    </p>
+>>>>>>> 8ac1f35a7655c299abc074e0914a4d4e88541454
 </body>
 </html>
 
