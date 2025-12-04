@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de notícias</title>
+</head>
+<body>
+    <h1>Notícias</h1>
+
+    <p>
+        <a href="{% url 'tarefas:criar_noticia' %}">Criar nova notícia</a> |
+        <a href="{% url 'tarefas:home' %}">Voltar para home</a>
+    </p>
+
+    {% if noticias %}
+        <ul>
+            {% for noticia in noticias %}
+                <li>
+                    <a href="{% url 'tarefas:noticia_detalhe' noticia.id %}">
+                        {{ noticia.titulo }} - {{ noticia.data }}
+                    </a>
+                    |
+                    <a href="{% url 'tarefas:atualizar_noticia' noticia.id %}">Editar</a>
+                    |
+                    <a href="{% url 'tarefas:deletar_noticia' noticia.id %}">Deletar</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Nenhuma notícia cadastrada.</p>
+    {% endif %}
+</body>
+</html>
+
+
