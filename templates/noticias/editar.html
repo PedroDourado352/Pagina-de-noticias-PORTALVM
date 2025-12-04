@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar notícia</title>
+</head>
+<body>
+    <h1>Editar notícia: {{ noticia.titulo }}</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Salvar alterações</button>
+    </form>
+
+    <p>
+        <a href="{% url 'tarefas:listar_noticias' %}">Voltar para lista</a>
+    </p>
+</body>
+</html>
+
+
